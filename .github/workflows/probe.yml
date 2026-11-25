@@ -1,0 +1,9 @@
+name: entitlement-probe
+on:
+  workflow_dispatch:
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: prove the hosted runner starts
+        run: echo "hosted runner started: $(date -u +%FT%TZ)"
